@@ -1,5 +1,5 @@
 
-# Pearson LOMT prototype
+# Form &amp; Function
 
 ## Setup
 
@@ -17,8 +17,3 @@ This runs all tasks, then listens for changes in one command.
 `git commit`
 `git push`
 `elf deploy`
-
-The site lives at [pearson-lomt.clearleft.work](http://pearson-lomt.clearleft.work)
-
-user: pearson
-pass: pearson
