@@ -1,0 +1,13 @@
+repository: git@github.com:aizlewood/aizlewood.github.io.git
+build: ['npm install', 'gulp']
+
+deploy:
+  branch: master
+  # server: clients
+  # domain: pearson-lomt.clearleft.work
+  # auth:
+    # pearson: pearson
+
+devbox:
+  domain: formfunction.elf
+  webroot: public  

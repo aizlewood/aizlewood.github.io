@@ -1,0 +1,167 @@
+[
+    {
+        "structure_id": 1,
+        "set-name": "Alabama: Course of Study",
+        "country-name": "USA",
+        "authority-name": "Alabama",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2010",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+    {
+        "structure_id": 1,
+        "set-name": "Alaska: Content Standards",
+        "country-name": "USA",
+        "authority-name": "Alaska",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2012",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+    {
+        "structure_id": 1,
+        "set-name": "Arizona: College and Career Ready Standards",
+        "country-name": "USA",
+        "authority-name": "Arizona",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2012",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+    {
+        "structure_id": 1,
+        "set-name": "California: Common Core Content Standards",
+        "country-name": "USA",
+        "authority-name": "California",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2012",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+    {
+        "structure_id": 1,
+        "set-name": "Georgia: Standards of Excellence",
+        "country-name": "USA",
+        "authority-name": "Georgia",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2012",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+    {
+        "structure_id": 1,
+        "set-name": "New Mexico: Common Core State Standards",
+        "country-name": "USA",
+        "authority-name": "New Mexico",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2011",
+        "status": "Approved",
+        "source": "ABXML"
+    },
+
+
+    {
+        "structure_id": 2,
+        "discipline-name": "Literacy",
+        "program-name": "ILIT",
+        "course-name": "ILIT 45",
+        "product-name": "ILIT 45 Global",
+        "start-grade": "",
+        "end-grade": "",
+        "grade-range": "5",
+        "status": "Approved"
+    },
+    {
+        "structure_id": 2,
+        "discipline-name": "Mathematics",
+        "program-name": "ActiveLearn Primary",
+        "course-name": "Abacus",
+        "product-name": "Abacus Year 6",
+        "start-grade": "",
+        "end-grade": "",
+        "grade-range": "5",
+        "status": "Approved"
+    },
+    {
+        "structure_id": 2,
+        "discipline-name": "Science",
+        "program-name": "US ElemScience 2018",
+        "course-name": "US ElemScience 2018",
+        "product-name": "Grade K Table of Contents",
+        "start-grade": "",
+        "end-grade": "",
+        "grade-range": "K",
+        "status": "Approved"
+    },
+
+
+    {
+        "structure_id": 3,
+        "name": "Science"
+    },
+    {
+        "structure_id": 3,
+        "name": "Mathematics"
+    },
+    {
+        "structure_id": 3,
+        "name": "Literacy"
+    },
+    {
+        "structure_id": 3,
+        "name": "Economics"
+    },
+    {
+        "structure_id": 3,
+        "name": "History"
+    },
+    {
+        "structure_id": 3,
+        "name": "Geography"
+    },
+
+    {
+        "structure_id": 10,
+        "set-name": "Alabama: Course of Study",
+        "country-name": "USA",
+        "authority-name": "Alabama",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2010",
+        "status": "Approved"
+    },
+
+    {
+        "structure_id": 7,
+        "set-name": "Alabama: Course of Study",
+        "country-name": "USA",
+        "authority-name": "Alabama",
+        "subject-name": "Literacy",
+        "start-grade": "K",
+        "end-grade": "12",
+        "grade-range": "K-12",
+        "year": "2010",
+        "status": "Approved"
+    }
+]

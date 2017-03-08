@@ -1,0 +1,57 @@
+[
+    {
+        "business_id": 1,
+        "slug": "curriculum-standard",
+        "name": "Curriculum Standard"
+    },
+    {
+        "business_id": 1,
+        "slug": "product",
+        "name": "Product"
+    },
+    {
+        "business_id": 1,
+        "slug": "intermediaries",
+        "name": "Intermediaries"
+    },
+    {
+        "business_id": 2,
+        "slug": "curriculum-standard",
+        "name": "Curriculum Standard"
+    },
+    {
+        "business_id": 2,
+        "slug": "product",
+        "name": "Product"
+    },
+    {
+        "business_id": 2,
+        "slug": "intermediaries",
+        "name": "Intermediaries"
+    },
+    {
+        "business_id": 3,
+        "slug": "framework",
+        "name": "Framework"
+    },
+    {
+        "business_id": 3,
+        "slug": "product",
+        "name": "Product"
+    },
+    {
+        "business_id": 4,
+        "slug": "gse",
+        "name": "GSE"
+    },
+    {
+        "business_id": 4,
+        "slug": "external-framework",
+        "name": "External Framework"
+    },
+    {
+        "business_id": 4,
+        "slug": "product",
+        "name": "Product"
+    },
+]
