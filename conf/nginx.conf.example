@@ -1,0 +1,131 @@
+# www to non-www redirect
+server {
+    # don't forget to tell on which port this server listens
+    listen [::]:80;
+    listen 80;
+    # listen on the www host
+    server_name www.{{domain}};
+    # and redirect to the non-www host (declared below)
+    return 301 $scheme://{{domain}}$request_uri;
+}
+
+# Main domain
+server {
+    # listen 80 deferred; # for Linux
+    listen [::]:80;
+    listen 80;
+    
+    # The host name to respond to
+    server_name {{domain}} {{# aliases}}{{.}} {{/ aliases}};
+
+    # Path for static files
+    root {{doc_root}};
+
+    # php goes straight to apache
+    location ~ [^/]\.php(/|$) {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $host;
+        proxy_pass http://127.0.0.1:{{apache_port}};
+    }
+
+    # reverse proxy to Apache
+    location / {
+        try_files $uri @apache;
+    }
+
+    location @apache {
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Host $host;
+        proxy_pass http://127.0.0.1:{{apache_port}};
+    }
+
+    ##################
+    # Authentication
+    ##################
+
+    {{#has_auth}}
+    auth_basic "Restricted";
+    auth_basic_user_file {{auth_file}};
+    {{/has_auth}}
+
+    ##################
+    # Logs
+    ##################
+
+    error_log off;
+    access_log off;
+
+    #Specify a charset
+    charset utf-8;
+
+    {{#is_remote}}
+
+    ##########
+    # Caching
+    ##########
+
+    # cache.appcache, your document html and data
+    location ~* \.(?:manifest|appcache|html?|xml|json)$ {
+        try_files $uri @apache;
+        expires -1;
+        access_log /var/log/nginx/static.log;
+    }
+
+    # Feed
+    location ~* \.(?:rss|atom)$ {
+        try_files $uri @apache;
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    # Media: images, icons, video, audio, HTC
+    location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+        try_files $uri @apache;
+        expires 1M;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # CSS and Javascript
+    location ~* \.(?:css|js)$ {
+        try_files $uri @apache;
+        expires 1y;
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    # WebFonts
+    location ~* \.(?:ttf|ttc|otf|eot|woff|woff2)$ {
+        try_files $uri @apache;
+        expires 1M;
+        access_log off;
+        add_header Cache-Control "public";
+
+        valid_referers none blocked server_names;
+        if ($invalid_referer) {
+           return   403;
+        }
+    }
+
+    {{/is_remote}}
+
+
+    # Force the latest IE version
+    add_header "X-UA-Compatible" "IE=Edge";
+
+    # Prevent clients from accessing hidden files (starting with a dot)
+    # This is particularly important if you store .htpasswd files in the site hierarchy
+    location ~* (?:^|/)\. {
+        deny all;
+    }
+
+    # Prevent clients from accessing to backup/config/source files
+    location ~* (?:\.(?:bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$ {
+        deny all;
+    }
+
+}

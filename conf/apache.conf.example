@@ -1,0 +1,15 @@
+<VirtualHost *:{{apache_port}}>
+  ServerAdmin dev@clearleft.com
+  ServerName {{domain}}
+  {{#aliases}}
+  ServerAlias {{.}}
+  {{/aliases}}
+
+  DocumentRoot {{doc_root}}
+
+  <Directory {{doc_root}}>
+      AllowOverride All
+  </Directory>
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
