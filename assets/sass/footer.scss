@@ -1,6 +1,7 @@
 footer {
 	max-width: 70em;
 	margin: 0 auto;
+	position: relative;
 }
 
 @media (max-width: 35em) {
@@ -18,3 +19,37 @@ ul.footernav li {
 	display: inline-block;	
 	margin: 0 1em;
 }
+
+// .square2 {
+// 	width: 70em;
+//     height: 40em;
+//     -webkit-transform: rotate(75deg);
+//     transform: rotate(75deg);
+//     background: #FFF;
+//     position: absolute;
+//     z-index: -1;
+//     bottom: 300px;
+//     left: 50px;
+// }
+
+// @media (max-width: 85em) {
+// 	.square2 {
+// 		transform: rotate(60deg);
+// 		background: $white;
+// 		position: absolute;
+// 		z-index: -1;
+// 	    top: -1380px;
+// 	    left: -844px;
+// 	}
+// }	
+
+// @media (max-width: 35em) {
+// 	.square2 {
+// 		transform: rotate(60deg);
+// 		background: $white;
+// 		position: absolute;
+// 		z-index: -1;
+// 	    top: -1537px;
+// 	    left: -1008px;
+// 	}
+// }
