@@ -1,0 +1,14 @@
+main {
+	max-width: 65em;
+	margin: 0 auto;
+	padding: 1em;
+	margin-top: 40em;
+}
+
+@media (max-width: 35em) {
+	main {
+		width: 100%;
+		padding: 1em;
+		margin-top: 28em;
+	}
+}

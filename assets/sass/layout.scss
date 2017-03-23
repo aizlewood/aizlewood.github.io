@@ -1,0 +1,56 @@
+.speakers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.speaker {
+	width: 50%;
+	padding: 0 4em;
+	text-align: center;
+}
+
+@media (max-width: 55em) {
+	.speaker {
+		width: 100%;
+		padding-right: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+.intro {
+	text-align: center;
+	max-width: 40em;
+	margin: 0 auto;
+	margin-bottom: 6em;
+}
+
+@media (max-width: 35em) {
+	.intro {
+		max-width: 100%;
+		margin-bottom: 2em;
+	}	
+}	
+
+.next-event {
+	position: relative;
+	padding: 1em;
+	margin: 5em 0 0 0;
+	text-align: center;
+}
+
+.circle {
+	line-height: 0;		/* remove line-height */ 
+	display: inline-block;	/* circle wraps image */
+	margin: 0px;
+	border: 6px solid $accent;
+	border-radius: 49.999998%;	/* relative value */
+	height: auto;
+	width: auto;
+}
+.circle img {
+	border-radius: 48.5%;	/* relative value for adjustable image size */
+}
+a.circle {
+	color: transparent;
+}
