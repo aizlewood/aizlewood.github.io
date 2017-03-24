@@ -12,7 +12,8 @@ h6 {
 a:link,
 a:visited,
 a:hover,
-a:active {
+a:active,
+a:focus {
 	color: $accent;
 	text-decoration: underline;
 	transition: color 0.5s ease;
@@ -21,6 +22,16 @@ a:active {
 a:hover {
 	text-decoration: none;
 	color: $white;
+}
+
+@media (max-width: 35em) {
+    a:link,
+	a:visited,
+	a:hover,
+	a:active,
+	a:focus {
+        color: $alt-accent;
+    }
 }
 
 ul, ol {
@@ -91,7 +102,7 @@ h1.brand span {
 	
 	h1.brand {
 		font-size: 11em;
-	    color: #9D2DFF;
+	    color: $brand;
 	    line-height: 0.799999999999999;
 	    letter-spacing: -8px;
 	    -webkit-transform: rotate(-30deg);
@@ -124,7 +135,7 @@ h1.brand span {
 
 	h1.brand {
 	    font-size: 9em;
-	    color: #9D2DFF;
+	    color: $alt-brand;
 	    line-height: 0.75555555555;
 	    letter-spacing: -7px;
 	    -webkit-transform: rotate(-30deg);
@@ -142,7 +153,7 @@ h1.brand span {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		font-weight: 800;
-		color: $accent;
+		color: $alt-accent;
 		transform: rotate(-30deg);
 		position: absolute;
 	    top: 299px;
@@ -222,6 +233,7 @@ h1.brand span {
 
 	.next-event span {
 	    font-size: 320%;
+	    color: $alt-brand-dark;
 	}
 
 	.next-event p {

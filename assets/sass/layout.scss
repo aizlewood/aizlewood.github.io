@@ -13,7 +13,7 @@
 @media (max-width: 55em) {
 	.speaker {
 		width: 100%;
-		padding-right: 2em;
+		padding: 0;
 		margin-bottom: 2em;
 	}
 }
@@ -48,6 +48,13 @@
 	height: auto;
 	width: auto;
 }
+
+@media (max-width: 35em) {
+	.circle {
+		border: 8px solid $alt-accent;
+	}
+}	
+
 .circle img {
 	border-radius: 48.5%;	/* relative value for adjustable image size */
 }

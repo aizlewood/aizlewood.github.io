@@ -20,36 +20,34 @@ ul.footernav li {
 	margin: 0 1em;
 }
 
-// .square2 {
-// 	width: 70em;
-//     height: 40em;
-//     -webkit-transform: rotate(75deg);
-//     transform: rotate(75deg);
-//     background: #FFF;
-//     position: absolute;
-//     z-index: -1;
-//     bottom: 300px;
-//     left: 50px;
-// }
+.square2 {
+	width: 40em;
+    height: 40em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: $accent;
+    position: absolute;
+    z-index: -1;
+    bottom: 580px;
+    left: 260px;
+}
 
-// @media (max-width: 85em) {
-// 	.square2 {
-// 		transform: rotate(60deg);
-// 		background: $white;
-// 		position: absolute;
-// 		z-index: -1;
-// 	    top: -1380px;
-// 	    left: -844px;
-// 	}
-// }	
+@media (max-width: 85em) {
+	.square2 {
+		background: $accent;
+		position: absolute;
+		z-index: -1;
+		top: -1330px;
+		left: 100px;
+	}
+}	
 
-// @media (max-width: 35em) {
-// 	.square2 {
-// 		transform: rotate(60deg);
-// 		background: $white;
-// 		position: absolute;
-// 		z-index: -1;
-// 	    top: -1537px;
-// 	    left: -1008px;
-// 	}
-// }
+@media (max-width: 35em) {
+	.square2 {
+		background: $alt-accent;
+		position: absolute;
+		z-index: -1;
+		top: -1680px;
+	    left: -158px;
+	}
+}

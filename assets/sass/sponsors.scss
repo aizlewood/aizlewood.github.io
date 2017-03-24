@@ -1,4 +1,17 @@
 .sponsors {
 	margin: 0 auto;
 	text-align: center;
+	color: $white;
+	margin-top: -1em;
+	margin-bottom: 2em;
+}
+
+.sponsors img.logo {
+	max-width: 150px;
+}
+
+@media (max-width: 35em) {
+	.sponsors {
+		color: $white;
+	}
 }

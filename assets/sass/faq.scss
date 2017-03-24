@@ -9,9 +9,8 @@
 	margin: 0 auto;
 }
 
-// @media (max-width: 35em) {
-// 	.faq {
-// 		width: 100%;
-// 		padding: 1em;
-// 	}
-// }
+@media (max-width: 35em) {
+	.faq {
+		background: $alt-brand-dark;
+	}
+}
