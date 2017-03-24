@@ -23,7 +23,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d2eff', end
 }
 body {
     margin: 0;
+}
+
+.container {
+    width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1,
