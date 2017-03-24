@@ -8,12 +8,11 @@
 html {
     background: $brand;
     transition: background 1s ease;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9d2eff+37,ad2eff+100 */
-    background: #9d2eff; /* Old browsers */
-    background: -moz-linear-gradient(top, #9d2eff 37%, #ad2eff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #9d2eff 37%,#ad2eff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #9d2eff 37%,#ad2eff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d2eff', endColorstr='#ad2eff',GradientType=0 ); /* IE6-9 */
+    // background: #9d2eff;
+    // background: -moz-linear-gradient(top, #9d2eff 37%, #ad2eff 100%);
+    // background: -webkit-linear-gradient(top, #9d2eff 37%,#ad2eff 100%);
+    // background: linear-gradient(to bottom, #9d2eff 37%,#ad2eff 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d2eff', endColorstr='#ad2eff',GradientType=0 );
     color: $white;
     font-family: $font-main;
     font-size: $base-font-size;
